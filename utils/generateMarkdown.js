@@ -18,7 +18,7 @@ function renderLicenseBadge(license) {
 
 // function to populate License content
 function renderLicenseLink(license) {
-  return license === "None" ? `This project is covered under no license` : `This project is covered under ${data.license}. For more information about licenses, please visit [https://choosealicense.com/licenses/](https://choosealicense.com/licenses/).`
+  return license === "None" ? `This project is covered under no license` : `This project is covered under ${license}. For more information about licenses, please visit [https://choosealicense.com/licenses/](https://choosealicense.com/licenses/).`
   
 }
 
@@ -60,8 +60,6 @@ function generateMarkdown(data) {
 
   ## Questions
   If you have any further question please visit my github profile [here](https://github.com/${data.github}) or email me at ${data.email}.
-
-
 `;
 }
 
