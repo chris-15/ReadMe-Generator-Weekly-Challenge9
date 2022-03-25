@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 
 const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown.js")
 const fs = require("fs")
 
 
@@ -88,7 +89,7 @@ const questions = () => {
         {
             type: "input",
             name: "contributing",
-            message: "How can other developers contribute to your project?",
+            message: "How can other developers contribute to your project? (Required)",
             validate: (contributingInput) => {
                 if (contributingInput) {
                     return true;
@@ -122,7 +123,7 @@ const questions = () => {
                 "Mozilla Public License 2.0",
                 "Apache License 2.0",
                 "MIT License",
-                "Boost Software License 2.0",
+                "Boost Software License 1.0",
                 "The Unlicense"
             ]
         }
@@ -132,11 +133,18 @@ const questions = () => {
 }
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFileSync(fileName,data)
+}
 
 // TODO: Create a function to initialize app
 function init() {
-    questions();
+    questions()
+    .then(data => {
+        console.log(data);
+        const readContent= generateMarkdown(data);
+        writeToFile("./dist/README.md",readContent)
+    })
 }
 
 // Function call to initialize app
