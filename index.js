@@ -5,7 +5,7 @@ const generateMarkdown = require("./utils/generateMarkdown.js")
 const fs = require("fs")
 
 
-// TODO: Create an array of questions for user input
+// function with an array of questions for user input using inquirer prompt
 const questions = () => {
     return inquirer.prompt([
         {
@@ -124,7 +124,8 @@ const questions = () => {
                 "Apache License 2.0",
                 "MIT License",
                 "Boost Software License 1.0",
-                "The Unlicense"
+                "The Unlicense",
+                "None"
             ]
         }
 
@@ -132,12 +133,12 @@ const questions = () => {
     ])
 }
 
-// TODO: Create a function to write README file
+// function to write README file
 function writeToFile(fileName, data) {
     fs.writeFileSync(fileName,data)
 }
 
-// TODO: Create a function to initialize app
+// function to initialize app
 function init() {
     questions()
     .then(data => {
