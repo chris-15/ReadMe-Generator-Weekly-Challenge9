@@ -5,7 +5,7 @@
 
 
   ## Description
-  This is a sample readme to test the functionality of this project
+  This is a sample read me to demonstrated the functionality of this project.
 
   ## Table of Contents 
   - [Installation](#installation)
@@ -17,19 +17,19 @@
   
 
   ## Installation
-  Node.js and inquirer need to be installed through npm.
+  Node.js and inquirer package need to be installed before use.
 
   ## Usage
-  Generate a Readme file
+  This project can be used to generate a README.md file.
 
   ## License 
   This project is covered under MIT License. For more information about licenses, please visit [https://choosealicense.com/licenses/](https://choosealicense.com/licenses/).
 
   ## Contributing
-  Contact me directly through email for any contributions.
+  Please contact me through email for any contribution inquiries.
 
   ## Tests
   No tests conducted.
 
   ## Questions
-  If you have any further question please visit my github profile [here](https://github.com/chris-15) or email me at n/a.
+  If you have any further question please visit my [GitHub Profile](https://github.com/chris-15) or email me at christopher.sarm15@gmail.com.
