@@ -11,16 +11,13 @@ function renderLicenseBadge(license) {
   :license === "Boost Software License 1.0" ? `![badge](https://img.shields.io/badge/license-Boost%20Software%20License%201.0-blue)`
   :license === "The Unlicense" ? `![badge](https://img.shields.io/badge/license-The%20Unlicense-blue)`
   : "";
-  
-  
-}
+};
 
 
 // function to populate License content
 function renderLicenseLink(license) {
   return license === "None" ? `This project is covered under no license` : `This project is covered under ${license}. For more information about licenses, please visit [https://choosealicense.com/licenses/](https://choosealicense.com/licenses/).`
-  
-}
+};
 
 
 // function to generate markdown for README
@@ -61,6 +58,6 @@ function generateMarkdown(data) {
   ## Questions
   If you have any further question please visit my [GitHub Profile](https://github.com/${data.github}) or email me at ${data.email}.
 `;
-}
+};
 
 module.exports = generateMarkdown;

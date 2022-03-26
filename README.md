@@ -22,7 +22,7 @@ The user must install both Node.js and the inquirer package before use.
 
 ## Usage 
 
-This application can be used to create a professional README.md file through a series of prompts in the command line.
+This application can be used to create a professional README.md file through a series of prompts in the command line. A sample readme can be found in the dist folder.
 
 
 ## Credits
